@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio - Alexis podevin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="{{ asset('assets/sass/main.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/sass/main.css.map') }}"/>
+</head>
+<body>
+        <div class="body-nav link link--1" >
+	<div>
+		<div class="menu-icon" data-stick-cursor>
+		<span class="menu-icon__line menu-icon__line-left"></span>
+		<span class="menu-icon__line"></span>
+		<span class="menu-icon__line menu-icon__line-right"></span>
+		</div>
+
+		<div class="nav">
+			<div class="nav__content">
+				<ul class="nav__list">
+					<li class="nav__list-item"><a href="{{ path('home') }}">Home</a></li>
+					<li class="nav__list-item"><a href="{{ path('projets') }}">Projets</a></li>
+					<li class="nav__list-item"><a href="{{ path('contact') }}">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+    <div class="cursor" data-cursor></div>
+<div class="homepage"> 
+
+
+
+    {% block content %}{% endblock %}
+    <div class="pre">
+
+    </div>
+    <div class="deu">
+            <div class="icon">
+                    <a data-stick-cursor href="https://github.com/Alexis-pdvn" target="_blank"><i class="fab fa-github first"></i></a>
+                    <a data-stick-cursor href="https://www.linkedin.com/in/alexis-podevin-30a1b5195/" target="_blank"><i class="fab fa-linkedin second"></i></a>     
+            </div>                                             
+    </div>
+
+</div>
+    
+
+    
+   
+    
+    <script src="{{ asset('assets/js/projet.js') }}"></script>
+    <script src="{{ asset('assets/js/cursor.js') }}"></script>
+    <script src="{{ asset('assets/js/menu.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+</body>
+</html>

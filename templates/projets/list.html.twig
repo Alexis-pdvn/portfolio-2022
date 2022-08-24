@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjetsController!{% endblock %}
+
+{% block content %}
+<h3>Voici mes projets</h3>
+<section class="section-projets">
+
+
+        <ul class="projets">
+{% for projet in projets %}
+                <li data-loc={{ projet.preview }}>
+                        <div class="titre_des">
+                                <h2>{{ projet.title }}btbtb</h2>
+                                <p>{{ projet.description }}</p>
+                        </div>
+                        <h1>1</h1>
+                {# </li>
+                <li data-loc="proj2">
+                        <div class="titre_des">
+                                <h2>Nom du projet</h2>
+                                <p>Description breve du projet en général ce que j'ai fait quoi !</p>
+                        </div>
+                        <h1>1</h1>
+                </li>
+                <li data-loc="proj3">
+                        <div class="titre_des">
+                                <h2>Nom du projet</h2>
+                                <p>Description breve du projet en général ce que j'ai fait quoi !</p>
+                        </div>
+                        <h1>1</h1>
+                </li> #}
+
+            {% endfor %}
+        </ul>
+</section>
+{% endblock %}
